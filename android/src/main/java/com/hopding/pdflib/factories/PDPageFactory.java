@@ -1,12 +1,38 @@
+// package com.hopding.pdflib.factories;
+
+// import android.graphics.Bitmap;
+// import android.graphics.BitmapFactory;
+// import android.support.annotation.RequiresPermission;
+// import android.content.Context;
+// import android.content.res.AssetManager;
+
+// import com.facebook.imagepipeline.core.ImagePipelineFactory;
+// import com.facebook.react.bridge.NoSuchKeyException;
+// import com.facebook.react.bridge.ReadableArray;
+// import com.facebook.react.bridge.ReadableMap;
+// import com.tom_roush.pdfbox.pdmodel.PDDocument;
+// import com.tom_roush.pdfbox.pdmodel.PDPage;
+// import com.tom_roush.pdfbox.pdmodel.PDPageContentStream;
+// import com.tom_roush.pdfbox.pdmodel.common.PDRectangle;
+// import com.tom_roush.pdfbox.pdmodel.font.PDFont;
+// import com.tom_roush.pdfbox.pdmodel.font.PDType0Font;
+// import com.tom_roush.pdfbox.pdmodel.graphics.image.JPEGFactory;
+// import com.tom_roush.pdfbox.pdmodel.graphics.image.LosslessFactory;
+// import com.tom_roush.pdfbox.pdmodel.graphics.image.PDImageXObject;
+
+// import java.io.BufferedInputStream;
+// import java.io.File;
+// import java.io.FileInputStream;
+// import java.io.IOException;
+// import java.io.InputStream;
+
 package com.hopding.pdflib.factories;
 
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.support.annotation.RequiresPermission;
 import android.content.Context;
 import android.content.res.AssetManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 
-import com.facebook.imagepipeline.core.ImagePipelineFactory;
 import com.facebook.react.bridge.NoSuchKeyException;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
@@ -20,7 +46,6 @@ import com.tom_roush.pdfbox.pdmodel.graphics.image.JPEGFactory;
 import com.tom_roush.pdfbox.pdmodel.graphics.image.LosslessFactory;
 import com.tom_roush.pdfbox.pdmodel.graphics.image.PDImageXObject;
 
-import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;

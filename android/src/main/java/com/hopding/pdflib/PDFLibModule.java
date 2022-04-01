@@ -1,28 +1,56 @@
 
+// package com.hopding.pdflib;
+
+// import android.content.ActivityNotFoundException;
+// import android.content.Intent;
+// import android.net.Uri;
+// import android.support.v4.content.FileProvider;
+// import android.util.Log;
+
+// import com.facebook.react.bridge.NoSuchKeyException;
+// import com.facebook.react.bridge.Promise;
+// import com.facebook.react.bridge.ReactApplicationContext;
+// import com.facebook.react.bridge.ReactContextBaseJavaModule;
+// import com.facebook.react.bridge.ReactMethod;
+
+// import com.facebook.react.bridge.Arguments;
+// import com.facebook.react.bridge.ReadableMap;
+// import com.facebook.react.bridge.WritableMap;
+// import com.hopding.pdflib.factories.PDDocumentFactory;
+// import com.tom_roush.pdfbox.pdmodel.PDDocument;
+// import com.tom_roush.pdfbox.pdmodel.PDPage;
+// import com.tom_roush.pdfbox.pdmodel.PDPageContentStream;
+// import com.tom_roush.pdfbox.pdmodel.font.PDFont;
+// import com.tom_roush.pdfbox.pdmodel.font.PDType1Font;
+// import com.tom_roush.pdfbox.pdmodel.font.PDType0Font;
+// import com.tom_roush.pdfbox.util.PDFBoxResourceLoader;
+
+// import java.io.File;
+// import java.io.FileOutputStream;
+// import java.io.IOException;
+// import java.io.InputStream;
+
+// import com.hopding.pdflib.factories.PDPageFactory;
+
+
 package com.hopding.pdflib;
 
-import android.content.ActivityNotFoundException;
-import android.content.Intent;
-import android.net.Uri;
-import android.support.v4.content.FileProvider;
-import android.util.Log;
-
+import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.NoSuchKeyException;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-
-import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.WritableMap;
 import com.hopding.pdflib.factories.PDDocumentFactory;
+import com.hopding.pdflib.factories.PDPageFactory;
 import com.tom_roush.pdfbox.pdmodel.PDDocument;
 import com.tom_roush.pdfbox.pdmodel.PDPage;
 import com.tom_roush.pdfbox.pdmodel.PDPageContentStream;
 import com.tom_roush.pdfbox.pdmodel.font.PDFont;
-import com.tom_roush.pdfbox.pdmodel.font.PDType1Font;
 import com.tom_roush.pdfbox.pdmodel.font.PDType0Font;
+import com.tom_roush.pdfbox.pdmodel.font.PDType1Font;
 import com.tom_roush.pdfbox.util.PDFBoxResourceLoader;
 
 import java.io.File;
@@ -30,7 +58,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import com.hopding.pdflib.factories.PDPageFactory;
 
 public class PDFLibModule extends ReactContextBaseJavaModule {
 
